@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'com.hci.nip'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // ref: https://github.com/google/gson 
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'org.json:json:20190722'
+
+    // ref: https://github.com/NanoHttpd/nanohttpd
+    implementation group: 'org.nanohttpd', name: 'nanohttpd', version: '2.3.1'
+    implementation group: 'org.nanohttpd', name: 'nanohttpd-websocket', version: '2.3.1'
+
+    // testing
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.testng:testng:6.14.3'
+    testImplementation 'org.mockito:mockito-core:2.25.1'
+}

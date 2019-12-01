@@ -1,0 +1,22 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/out
+/captures
+.externalNativeBuild
+/test-results
+
+.project
+.classpath
+.settings
+
+proguard/
+
+# Log Files
+*.log
+
+# lint
+/lint
